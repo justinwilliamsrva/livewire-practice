@@ -10,7 +10,10 @@ class Starting extends Component
     public $loud = false;
     public $greeting = "Hello";
 
-
+    public function resetName($name)
+    {
+        $this->name = $name;
+    }
 
     public function render()
     {

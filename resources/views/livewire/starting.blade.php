@@ -9,4 +9,5 @@
 
     </select>
     <h3>{{ $greeting }} {{ $name }} @if($loud) ! @endif</h3>
+    <form action="#" wire:submit.prevent="$set('name','bingo')"><button>Reset Name</button></form>
 </div>

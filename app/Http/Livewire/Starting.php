@@ -2,17 +2,22 @@
 
 namespace App\Http\Livewire;
 
+use Illuminate\Http\Request;
 use Livewire\Component;
 
 class Starting extends Component
 {
     public $name = "Jelly";
-    public $loud = false;
-    public $greeting = "Hello";
 
-    public function resetName($name)
+    public function mount( $name)
     {
         $this->name = $name;
+    }
+
+    public function updatedName()
+    {
+        $this->name = strtoupper($this->name);
+
     }
 
     public function render()

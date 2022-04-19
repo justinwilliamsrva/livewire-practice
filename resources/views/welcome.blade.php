@@ -23,7 +23,7 @@
     </head>
     <body class="antialiased">
        <div>
-           @livewire('starting')
+           @livewire('starting',['name' => 'fart'])
         </div>
         @livewireScripts
     </body>
